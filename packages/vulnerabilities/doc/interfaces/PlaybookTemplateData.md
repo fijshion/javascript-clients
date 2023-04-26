@@ -15,6 +15,7 @@ PlaybookTemplateData
 - [description](PlaybookTemplateData.md#description)
 - [play](PlaybookTemplateData.md#play)
 - [reboot\_required](PlaybookTemplateData.md#reboot_required)
+- [resolution\_type](PlaybookTemplateData.md#resolution_type)
 - [version](PlaybookTemplateData.md#version)
 
 ## Properties
@@ -67,6 +68,22 @@ PlaybookTemplateData
 
 ___
 
+### resolution\_type
+
+• **resolution\_type**: `string`
+
+Type of the resolution provided by playbook.
+
+**`Memberof`**
+
+PlaybookTemplateData
+
+#### Defined in
+
+[api.ts:2154](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L2154)
+
+___
+
 ### version
 
 • **version**: `string`
@@ -79,4 +96,4 @@ PlaybookTemplateData
 
 #### Defined in
 
-[api.ts:2154](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L2154)
+[api.ts:2160](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L2160)

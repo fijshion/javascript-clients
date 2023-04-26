@@ -741,7 +741,7 @@ RoleApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `createRoles` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `Promise`<`RequestArgs`\> |
+| `createRole` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `deleteRole` | (`uuid`: `string`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getRole` | (`uuid`: `string`, `scope?`: ``"account"`` \| ``"principal"``, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getRoleAccess` | (`uuid`: `string`, `limit?`: `number`, `offset?`: `number`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
@@ -777,7 +777,7 @@ RoleApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `createRoles` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\> |
+| `createRole` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\> |
 | `deleteRole` | (`uuid`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `getRole` | (`uuid`: `string`, `scope?`: ``"account"`` \| ``"principal"``, `options?`: `any`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\> |
 | `getRoleAccess` | (`uuid`: `string`, `limit?`: `number`, `offset?`: `number`, `options?`: `any`) => `AxiosPromise`<[`AccessPagination`](interfaces/AccessPagination.md)\> |
@@ -811,7 +811,7 @@ RoleApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `createRoles` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\>\> |
+| `createRole` | (`roleIn`: [`RoleIn`](interfaces/RoleIn.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\>\> |
 | `deleteRole` | (`uuid`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `getRole` | (`uuid`: `string`, `scope?`: ``"account"`` \| ``"principal"``, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`RoleWithAccess`](interfaces/RoleWithAccess.md)\>\> |
 | `getRoleAccess` | (`uuid`: `string`, `limit?`: `number`, `offset?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`AccessPagination`](interfaces/AccessPagination.md)\>\> |

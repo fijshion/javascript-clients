@@ -26,7 +26,7 @@ RoleApi - object-oriented interface
 
 ### Methods
 
-- [createRoles](RoleApi.md#createroles)
+- [createRole](RoleApi.md#createrole)
 - [deleteRole](RoleApi.md#deleterole)
 - [getRole](RoleApi.md#getrole)
 - [getRoleAccess](RoleApi.md#getroleaccess)
@@ -100,13 +100,13 @@ BaseAPI.configuration
 
 ## Methods
 
-### createRoles
+### createRole
 
-▸ **createRoles**(`roleIn`, `options?`): `Promise`<`AxiosResponse`<[`RoleWithAccess`](../interfaces/RoleWithAccess.md), `any`\>\>
+▸ **createRole**(`roleIn`, `options?`): `Promise`<`AxiosResponse`<[`RoleWithAccess`](../interfaces/RoleWithAccess.md), `any`\>\>
 
 **`Summary`**
 
-Create a roles for a tenant
+Create a role for a tenant
 
 **`Throws`**
 
@@ -257,7 +257,7 @@ RoleApi
 | `orderBy?` | ``"name"`` \| ``"modified"`` \| ``"policyCount"`` \| ``"display_name"`` | Parameter for ordering roles by value. For inverse ordering, supply \&#39;-\&#39; before the param value, such as: ?order_by&#x3D;-name |
 | `addFields?` | (``"groups_in"`` \| ``"groups_in_count"`` \| ``"access"``)[] | Parameter for add list of fields to display for roles. |
 | `username?` | `string` | Unique username of the principal to obtain roles for (only available for admins, and if supplied, takes precedence over the identity header). |
-| `application?` | `string` | The application name(s) to filter roles by, from permissions. This is an exact match. You may also use a comma-separated list to match on multiple applications. |
+| `application?` | `string` | The application name(s) to filter roles by, from permissions or external tenant name. This is an exact match. You may also use a comma-separated list to match on multiple applications. |
 | `permission?` | `string` | The permission(s) to filter roles by. This is an exact match. You may also use a comma-separated list to match on multiple permissions. |
 | `externalTenant?` | `string` | Parameter for filtering roles by external tenant name using string search. |
 | `options?` | `any` | Override http request option. |
@@ -278,7 +278,7 @@ ___
 
 **`Summary`**
 
-Patch a Role in the tenant
+Patch a role in the tenant
 
 **`Throws`**
 
@@ -291,7 +291,7 @@ RoleApi
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `uuid` | `string` | ID of role to update |
-| `rolePatch?` | [`RolePatch`](../interfaces/RolePatch.md) | Patch to a Role |
+| `rolePatch?` | [`RolePatch`](../interfaces/RolePatch.md) | Patch to a role |
 | `options?` | `any` | Override http request option. |
 
 #### Returns
@@ -310,7 +310,7 @@ ___
 
 **`Summary`**
 
-Update a Role in the tenant
+Update a role in the tenant
 
 **`Throws`**
 
@@ -323,7 +323,7 @@ RoleApi
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `uuid` | `string` | ID of role to update |
-| `roleWithAccess` | [`RoleWithAccess`](../interfaces/RoleWithAccess.md) | Update to a Role |
+| `roleWithAccess` | [`RoleWithAccess`](../interfaces/RoleWithAccess.md) | Update to a role |
 | `options?` | `any` | Override http request option. |
 
 #### Returns

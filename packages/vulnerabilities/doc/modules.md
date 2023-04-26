@@ -156,8 +156,6 @@ DefaultApi - axios parameter creator
 | `getDashbar` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getDashboard` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getExecutiveReport` | (`options?`: `any`) => `Promise`<`RequestArgs`\> |
-| `getMitigatedSystemsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
-| `getMitigatedSystemsIdsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPlaybookTemplate` | (`ruleId`: `string`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getStatusList` | (`options?`: `any`) => `Promise`<`RequestArgs`\> |
 | `getSystemDetails` | (`inventoryId`: `string`, `options?`: `any`) => `Promise`<`RequestArgs`\> |
@@ -171,7 +169,7 @@ DefaultApi - axios parameter creator
 
 #### Defined in
 
-[api.ts:2637](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L2637)
+[api.ts:2643](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L2643)
 
 ___
 
@@ -211,8 +209,6 @@ DefaultApi - factory interface
 | `getDashbar` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`DashbarOut`](interfaces/DashbarOut.md)\> |
 | `getDashboard` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`Dashboard`](interfaces/Dashboard.md)\> |
 | `getExecutiveReport` | (`options?`: `any`) => `AxiosPromise`<[`ExecutiveReport`](interfaces/ExecutiveReport.md)\> |
-| `getMitigatedSystemsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`MitigatedSystemsIdsOut`](interfaces/MitigatedSystemsIdsOut.md)\> |
-| `getMitigatedSystemsIdsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`MitigatedSystemsOut`](interfaces/MitigatedSystemsOut.md)\> |
 | `getPlaybookTemplate` | (`ruleId`: `string`, `options?`: `any`) => `AxiosPromise`<[`PlaybookTemplate`](interfaces/PlaybookTemplate.md)\> |
 | `getStatusList` | (`options?`: `any`) => `AxiosPromise`<[`StatusListOut`](interfaces/StatusListOut.md)\> |
 | `getSystemDetails` | (`inventoryId`: `string`, `options?`: `any`) => `AxiosPromise`<[`SystemDetailsOut`](interfaces/SystemDetailsOut.md)\> |
@@ -226,7 +222,7 @@ DefaultApi - factory interface
 
 #### Defined in
 
-[api.ts:5630](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L5630)
+[api.ts:5244](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L5244)
 
 ___
 
@@ -264,8 +260,6 @@ DefaultApi - functional programming interface
 | `getDashbar` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DashbarOut`](interfaces/DashbarOut.md)\>\> |
 | `getDashboard` | (`tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Dashboard`](interfaces/Dashboard.md)\>\> |
 | `getExecutiveReport` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ExecutiveReport`](interfaces/ExecutiveReport.md)\>\> |
-| `getMitigatedSystemsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`MitigatedSystemsIdsOut`](interfaces/MitigatedSystemsIdsOut.md)\>\> |
-| `getMitigatedSystemsIdsByCve` | (`cveId`: `string`, `filter?`: `string`, `limit?`: `number`, `offset?`: `number`, `page?`: `number`, `pageSize?`: `number`, `sort?`: `string`, `statusId?`: `string`, `dataFormat?`: `string`, `uuid?`: `string`, `ruleKey?`: `string`[], `rulePresence?`: `boolean`[], `rule?`: `string`[], `tags?`: `string`[], `sapSids?`: `string`[], `sapSystem?`: `boolean`, `showAdvisories?`: `boolean`, `advisory?`: `string`, `rhelVersion?`: `string`, `advisoryAvailable?`: `boolean`[], `remediation?`: `string`, `ansible?`: `boolean`, `mssql?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`MitigatedSystemsOut`](interfaces/MitigatedSystemsOut.md)\>\> |
 | `getPlaybookTemplate` | (`ruleId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PlaybookTemplate`](interfaces/PlaybookTemplate.md)\>\> |
 | `getStatusList` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`StatusListOut`](interfaces/StatusListOut.md)\>\> |
 | `getSystemDetails` | (`inventoryId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SystemDetailsOut`](interfaces/SystemDetailsOut.md)\>\> |
@@ -279,4 +273,4 @@ DefaultApi - functional programming interface
 
 #### Defined in
 
-[api.ts:5032](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L5032)
+[api.ts:4718](https://github.com/RedHatInsights/javascript-clients/blob/master/packages/vulnerabilities/api.ts#L4718)
